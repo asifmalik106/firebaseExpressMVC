@@ -10,5 +10,9 @@ module.exports = {
     },
     getStorage: () =>{
         return storage;
+    },
+
+    getAuth: () =>{
+        return firebaseAdmin.auth();
     }
 };
