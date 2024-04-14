@@ -3,8 +3,8 @@ const serviceAccount = require("../key.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    storageBucket: 'gs://test-project-with-shuvo.appspot.com/',
-    databaseURL: "http://127.0.0.1:9000/?ns=test-project-with-shuvo"
+    // storageBucket: 'gs://test-project-with-shuvo.appspot.com/',
+    databaseURL: "https://playground-e2401-default-rtdb.firebaseio.com/"
 });
 
 module.exports = admin;
